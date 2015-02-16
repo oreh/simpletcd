@@ -1,0 +1,70 @@
+{
+    "get":{
+        "key_0": {
+            "uri": "http://127.0.0.1:4001/v2/keys/key_0?recursive=true",
+            "response": {
+                "action": "get",
+                "node": {
+                    "key": "/test",
+                    "value": "key 0 value",
+                    "modifiedIndex": 199,
+                    "createdIndex":199
+                }
+            },
+            "obj": {
+                "test": "key 0 value"
+            }
+        },
+        "test_dir": {
+            "uri": "http://127.0.0.1:4001/v2/keys/test_dir?recursive=true",
+            "response": {
+                "action": "get",
+                "node": {
+                    "createdIndex": 200,
+                    "dir": true,
+                    "key": "/test_dir",
+                    "modifiedIndex": 200,
+                    "nodes": [
+                        {
+                            "createdIndex": 200,
+                            "key": "/test_dir/key_0",
+                            "modifiedIndex": 200,
+                            "value": "key 0 value"
+                        },
+                        {
+                            "createdIndex": 201,
+                            "key": "/test_dir/key_1",
+                            "modifiedIndex": 201,
+                            "value": "key 1 value"
+                        }
+                    ]
+                }
+            },
+            "obj": {
+                "test_dir": {
+                    "key_0": "key 0 value",
+                    "key_1": "key 1 value"
+                }
+            }
+        }
+    },
+    "put": {
+        "test_key": {
+            "uri": "http://127.0.0.1:4001/v2/keys/test_key",
+            "data": "value of test_key",
+            "response":{
+                "action": "set",
+                "node": {
+                    "key": "/test_key",
+                    "value": "'value of test_key'",
+                    "modifiedIndex": 229,
+                    "createdIndex":229
+                }
+            },
+            "obj": {
+                "test_key": "value of test_key"
+            }
+        }
+    },
+    "delete": {}
+}
