@@ -7,7 +7,7 @@ import urllib2
 
 DEFAULT_ETCD_PROTOCOL = 'http'
 DEFAULT_ETCD_HOST = "127.0.0.1"
-DEFAULT_ETCD_PORT = 4001
+DEFAULT_ETCD_PORT = 2379
 
 
 class EtcdOpsException(Exception):
@@ -54,6 +54,7 @@ def dict_to_records(data, parent_key='/'):
         else:
             raise ValueError('Cannot convert type %s to etcd data' % type(v))
     return records
+
 
 class EtcdHTTPConnect(object):
 
