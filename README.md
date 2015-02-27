@@ -47,7 +47,7 @@ pip install simpletcd
 >> from simpletcd.ectd import Etcd
 
 >> etcd = Etcd()
->> etcd.put('mytopkey')
+>> etcd.get('mytopkey')
 {u'mytopkey': {u'key_0': u'v0',
   u'key_1': {u'key_1_0': u'v1_0', u'key_1_1': u'v1_1'}}}
 ```
