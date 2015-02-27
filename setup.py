@@ -10,7 +10,7 @@ setup(
   download_url = 'https://github.com/oreh/simpletcd/tarball/0.1.2',
   keywords = ['client', 'etcd'],
   classifiers = [],
-  platform = ['any'],
+  platforms = ['any'],
   long_description = '',
   license = 'MIT',
 )
