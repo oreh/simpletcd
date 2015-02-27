@@ -53,5 +53,4 @@ pip install simpletcd
 ```
 
 Changes:
-0.1.1: Change default port to 2379
-0.1.0: Initial release
+0.1.3: Initial release
