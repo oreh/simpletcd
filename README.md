@@ -52,3 +52,6 @@ pip install simpletcd
   u'key_1': {u'key_1_0': u'v1_0', u'key_1_1': u'v1_1'}}}
 ```
 
+Changes:
+0.1.1: Change default port to 2379
+0.1.0: Initial release
